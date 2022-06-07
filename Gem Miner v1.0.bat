@@ -241,6 +241,7 @@ echo set /a DarkMatter=0
 echo set /a Miners=0
 echo set /a IncomeCalculation=0
 echo set /a IncomeCalculation2=0
+echo set /a Rebirth=0
 echo set /a RebirthBoost=1
 echo set /a Trophy=0
 echo set /a PlaySeconds=0
@@ -392,7 +393,7 @@ echo [7] Buy Dark Matter Gem Miner - Price: !DarkMatterGemMinerPrice!
 echo You have !DarkMatterMax! Basic Gem Miners. Earns: 1000 Gems/s Each!
 echo.
 echo [8] Buy Trophy - Price: 1000000000
-echo You have !Trophy! Trophies. Earns: 2x Gems For All!
+echo You have !Trophy! Trophies. Earns: Temporary 2x Gems For All!
 echo.
 echo.
 echo.
@@ -496,6 +497,7 @@ echo set /a DarkMatter=0
 echo set /a Miners=0
 echo set /a IncomeCalculation=0
 echo set /a IncomeCalculation2=0
+echo set /a Rebirth=!Rebirth! + 1
 echo set /a RebirthBoost=!RebirthBoost! + 1
 echo set /a Trophy=0
 echo set /a PlaySeconds=!PlaySeconds!
@@ -805,7 +807,7 @@ echo Networth: !Networth!
 echo.
 echo.
 echo This Playthrough is !LegitGame!^^!
-echo (Legit   = No Admin Commands Used)
+echo ( Legit  = No Admin Commands Used)
 echo (Cheated = Admin Commands Used)
 echo.
 echo.
@@ -820,11 +822,11 @@ echo Dark Matter Mines Obtained. !DarkMatterGemMiner!
 echo Trophies Obtained . . . . . !Trophy!
 echo.
 echo.
+echo You rebirthed !Rebirth! Times^^!
+echo.
 echo Boosts:
 echo !RebirthBoost!x Rebirth Boost!
 echo !TrophyBoost!x Trophies Boost!
-echo.
-echo.
 echo.
 pause
 goto :gamemenu
@@ -1114,6 +1116,7 @@ echo set /a DarkMatter=0
 echo set /a Miners=0
 echo set /a IncomeCalculation=0
 echo set /a IncomeCalculation2=0
+echo set /a Rebirth=!Rebirth!
 echo set /a RebirthBoost=!RebirthBoost!
 echo set /a Trophy=!Trophy!
 echo set /a PlaySeconds=!PlaySeconds!
