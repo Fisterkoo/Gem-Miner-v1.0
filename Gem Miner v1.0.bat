@@ -797,16 +797,17 @@ if !loguse! EQU Guest (
 	pause
 	goto :gamemenu
 )
-echo     Some stats will show up only after you
-echo    save the game. This bug will be fixed as
-echo   soon as possible^^! Thanks for your patience^^!
 echo.
 echo        .   .   .   S T A T S   .   .   .
 echo.
 echo Playtime:!PlayYears!Y:!PlayDays!D:!PlayHours!H:!PlayMinutes!M:!PlaySeconds!S
 echo Networth: !Networth!
 echo.
+echo.
 echo This Playthrough is !LegitGame!^^!
+echo (Legit   = No Admin Commands Used)
+echo (Cheated = Admin Commands Used)
+echo.
 echo.
 echo Stuff Obtained:
 echo Basic Mines Obtained. . . . !BasicGemMiner!
@@ -818,9 +819,12 @@ echo Emerald Mines Obtained. . . !EmeraldGemMiner!
 echo Dark Matter Mines Obtained. !DarkMatterGemMiner!
 echo Trophies Obtained . . . . . !Trophy!
 echo.
+echo.
 echo Boosts:
 echo !RebirthBoost!x Rebirth Boost!
 echo !TrophyBoost!x Trophies Boost!
+echo.
+echo.
 echo.
 pause
 goto :gamemenu
@@ -855,6 +859,8 @@ echo [4] !AutologinONOFF! Autologin
 echo [5] Credits
 echo [6] Delete All Data!
 echo [7] !AutosaveONOFF!
+echo.
+echo.
 echo.
 echo [9] Admin Console
 echo [0] Return to The Game
@@ -1003,7 +1009,7 @@ pause
 goto :loading
 
 :Credits
-mode 60,20
+mode 60,15
 cls
 echo Game made by Fisterkoo
 echo Game development started Saturday 4. June 2022, 13:48:18
