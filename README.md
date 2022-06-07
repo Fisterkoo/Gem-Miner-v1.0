@@ -1,4 +1,12 @@
 # Gem-Miner-v1.0
 
 Welcome to Gem Miner v1.0!
-Hope you have fun playing this game!
+
+INSTRUCTIONS:
+Copy/Download the code, and Run it. The best would be if you put it in Separate Folder.
+
+Thats all there is to say, good luck and have fun!
+
+
+
+Update v1.1 Comming in few days...
